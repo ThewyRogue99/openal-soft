@@ -11,20 +11,22 @@ project "OpenAL-Soft"
 
 	includedirs
 	{
-		"alc",
-		"common",
-		"include"
+		"src",
+		"src/alc",
+		"src/common",
+		"include",
+		"include/AL"
 	}
 
 	files
 	{
-		"**.h",
-		"**.cpp"
+		"src/**.h",
+		"src/**.cpp"
 	}
 
 	excludes
 	{
-		"alc/mixer/mixer_neon.cpp"
+		"src/alc/mixer/mixer_neon.cpp"
 	}
 
 	defines
